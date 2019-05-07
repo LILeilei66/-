@@ -18,13 +18,17 @@
    ```D_KL(P||Q) = sum{P(x_i) * log(P(x_i)/Q(x_i))}```
    
 4. 交叉熵：
-   H(p, q) = - sum {p(x_i) * log(q(x_i))}
+
+   ```H(p, q) = - sum {p(x_i) * log(q(x_i))}```
+   
    产生原因:
+   
        ```D_KL(p||q) = sum{p(x_i) * log(p(x_i)/q(x_i))}
        
                   = sum{p(x_i) * log(p(x_i))} - sum {p(x_i) * log(q(x_i))}
                   
                   = H(p) - sum {p(x_i) * log(q(x_i))}```
+                  
        <p = 真实分布 => H(p) 不变, 所以可以只看后者>
        
     e.g.:
