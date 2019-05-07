@@ -1,6 +1,6 @@
 关于交叉熵，书上没有找到，参见csdn https://blog.csdn.net/tsyccnh/article/details/79163834
 
-<h3> A. 背景知识:<h3>
+### A. 背景知识:
 
 1. 信息量：
 
