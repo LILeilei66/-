@@ -1,6 +1,6 @@
 关于交叉熵，书上没有找到，参见csdn https://blog.csdn.net/tsyccnh/article/details/79163834
 
-<h3> A. 背景知识:
+<h3> A. 背景知识:<h3>
 
 1. 信息量：
 
@@ -26,7 +26,9 @@
                   
                   = H(p) - sum {p(x_i) * log(q(x_i))}```
        <p = 真实分布 => H(p) 不变, 所以可以只看后者>
+       
     e.g.:
+    
       ```y_ = array([[0.18521222, 0.14295502, 0.6718327 ],
       
                   [0.15282199, 0.10026189, 0.7469162 ]], dtype=float32)
@@ -34,4 +36,5 @@
       target = <tf.Tensor: id=90, shape=(2,), dtype=int32, numpy=array([1, 2])>
       
       H = - (1 * log(0.14295502) + 1 * log(0.7469162)) = -2.237027555704117```
+      
       注：在 tf 以 mean 作为 loss.
