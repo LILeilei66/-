@@ -1,14 +1,20 @@
 关于交叉熵，书上没有找到，参见csdn https://blog.csdn.net/tsyccnh/article/details/79163834
 
 A. 背景知识:
+===========
 1. 信息量：
+----------
    I(x) = -log(P(x))
 2. 信息量期望:
    利用熵来表示.
+   
    H(x) = - sum{P(x_i) * log(P(x_i))}
+   
 3. 相对熵(KL 散度)：
    (有分布 P, Q, 比较二者)
+   
    D_KL(P||Q) = sum{P(x_i) * log(P(x_i)/Q(x_i))}
+   
 4. 交叉熵：
    H(p, q) = - sum {p(x_i) * log(q(x_i))}
    产生原因:
